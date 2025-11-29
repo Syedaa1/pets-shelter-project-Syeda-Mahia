@@ -14,7 +14,7 @@ header {
 }
 
 nav {
-    background-color: #4A8CFF;
+    background-color: #9FC2FF;
     padding: 10px;
 }
 
@@ -23,7 +23,8 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+    align-items: center;
     gap: 20px;
 }
 
@@ -31,6 +32,9 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    padding: 8px 14px;
+    border-radius: 8px;
+    transition: 0.3s ease;
 }
 
 main {
@@ -75,5 +79,19 @@ td {
     width: 250px;
     border-radius: 8px;
     border: 3px solid #B59AFC;
+}
+nav ul li a:hover {
+    background-color: #4A8CFF;
+    transform: scale(1.05);
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
