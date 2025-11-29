@@ -1,1 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loved Pets Animal Shelter</title>
+    <style>
+        /* General Body Styling and Background Color */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #9FC2FF; /* Required background color */
+            color: #333;
+            scroll-behavior: smooth; /* Smooth scrolling for internal links */
+        }
 
+        /* Header and Navigation Bar Styling */
+        header {
+            background-color: #4A8CFF;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky; /* Keeps the nav bar at the top */
+            top: 0;
+            z-index: 100;
+        }
+
+        .shelter-name {
+            color: white;
+            font-size: 1.5em;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex; /* Makes the nav bar horizontal */
+        }
+
+        nav ul li {
+            margin-left: 20px; /* Spacing adjustment */
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            background-color: #4ACSFF; /* Button background */
+            padding: 10px 15px;
+            border-radius: 8px; /* Rounded corners */
+            transition: background-color 0.3s, color 0.3s;
+            display: inline-block;
+            /* Accessibility: Ensures good contrast and click area */
+        }
+
+        /* Hover Effect for Navigation Links */
+        nav ul li a:hover {
+            background-color: #B59AFC; /* Hover effect color */
+            color: #333;
+        }
+
+        /* Main Content Styling */
+        main {
+            padding: 20px;
+            max-width: 1000px;
+            margin: 20px auto;
+            background-color: #B3FCFC; /* Content container background */
+            border-radius: 15px; /* Rounded corners for the main section */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Heading Styles */
+        h1, h2, h3 {
+            color: #4A8CFF; /* Heading color */
+            padding-bottom: 5px;
+            border-bottom: 2px solid #9FC2FF;
+            margin-top: 25px; /* Spacing adjustment */
+        }
+
+        /* Paragraph Styles */
+        p {
+            line-height: 1.6;
+            margin-bottom: 15px; /* Spacing adjustment */
+            color: #555;
+        }
+
+        /* Section Styling for Spacing */
+        section {
+            padding: 20px 0;
+            margin-bottom: 30px;
+        }
+
+        /* Image Styling */
+        .shelter-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px 0;
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        /* List Styling */
+        ul, ol {
+            margin-left: 20px;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+        }
+
+        /* Table Styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            border: 1px solid #4A8CFF;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #4ACSFF;
+            color: white;
+        }
+
+        /* Accessibility: Skip to main content link (visually hidden until focused) */
+        .skip-link {
+            position: absolute;
+            left: -999px;
+            padding: 8px;
+            background: #4ACSFF;
+            color: white;
+            z-index: 999;
+            border-radius: 0 0 8px 8px;
+        }
+
+        .skip-link:focus {
+            left: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header role="banner">
+        <div class="shelter-name">Loved Pets Animal Shelter</div>
+        
+        <nav role="navigation">
+            <ul>
+                <li><a href="#philosophy">Our Philosophy</a></li>
+                <li><a href="#information">Contact & Hours</a></li>
+                <li><a href="#volunteer">Volunteer</a></li>
+                <li><a href="mailto:josie@welovepets.com">Email Us</a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content" role="main">
+        
+        <section id="philosophy" aria-labelledby="philosophy-heading">
+            <h2 id="philosophy-heading">Our Philosophy 💖</h2>
+            
+            <p>At Loved Pets Animal Rescue, we believe all animals deserve a chance to find a **loving forever home**. We provide initial veterinary care to rescued animals, then work to match each animal with a human family to love them and keep them safe forever.</p>
+            <p>All animals are screened for diseases upon arrival, washed and groomed, and then added to our website for adoptive families to see. All potential adoptive families are also screened for adoption history, household lifestyle, and commitment to providing a safe and loving home.</p>
+            
+            <img src="placeholder-pet-image.jpg" alt="A happy dog and cat cuddling together, representing the love at the shelter." class="shelter-image">
+        </section>
+
+        <hr>
+
+        <section id="information" aria-labelledby="information-heading">
+            <h2 id="information-heading">Contact and Shelter Information 🗺️</h2>
+            
+            <p>
+                <strong>Business Name:</strong> Loved Pets Animal Shelter<br>
+                <strong>Address:</strong> 6645 Watergrass Cir., Springfield, Arizona 11645<br>
+                <strong>Phone #:</strong> (555) 476-2984<br>
+                <strong>Contact Email:</strong> <a href="mailto:josie@welovepets.com">josie@welovepets.com</a>
+            </p>
+
+            <h3>Hours of Operation ⏰ (HTML Table)</h3>
+            <div role="region" aria-labelledby="hours-table-caption" tabindex="0">
+                <table summary="Daily hours of operation for Loved Pets Animal Shelter.">
+                    <caption id="hours-table-caption" class="visually-hidden">Hours of Operation Table</caption>
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Hours</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday</td>
+                            <td>8am - 5pm</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>8am - 5pm</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>8am - 8pm</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>8am - 5pm</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>8am - 12pm</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>8am - 12pm</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>Closed</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            </section>
+
+        <hr>
+
+        <section id="volunteer" aria-labelledby="volunteer-heading">
+            <h2 id="volunteer-heading">Volunteering at Loved Pets 🤝</h2>
+
+            <p>We can always use volunteers to help keep our shelter open! Volunteers are needed for several vital roles:</p>
+            
+            <ul>
+                <li>Bathe and groom animals.</li>
+                <li>Play with pets to help them socialize and keep them happy.</li>
+                <li>Clean kennels and screening rooms.</li>
+                <li>Help with administrative tasks in the office.</li>
+            </ul>
+
+            <p>If you’re interested in volunteering, please complete the steps below.</p>
+
+            <h3>How to become a volunteer (Ordered List)</h3>
+            
+            <ol>
+                <li>Complete the online application.</li>
+                <li>Submit the application by emailing it to <a href="mailto:volunteer@welovepets.com">volunteer@welovepets.com</a>.</li>
+                <li>Participate in a brief phone interview.</li>
+                <li>Attend a volunteer training session on the first Saturday of every month.</li>
+            </ol>
+            
+            <p>We look forward to welcoming you to the team!</p>
+        </section>
+
+    </main>
+
+    <footer role="contentinfo">
+        </footer>
+</body>
+</html>
