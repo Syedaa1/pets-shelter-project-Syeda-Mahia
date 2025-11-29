@@ -4,7 +4,7 @@ html {
 }
 
 body {
-     font-family: 'Times New Roman', serif;
+    font-family: 'Times New Roman', serif;
     margin: 0;
     padding: 0;
     background-color: #9FC2FF;
@@ -14,7 +14,7 @@ body {
 /* ===== Header & Navigation ===== */
 header {
     background-color: #4A8CFF;
-      font-family: 'Times New Roman', serif;
+    font-family: 'Times New Roman', serif;
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
@@ -42,7 +42,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-      font-family: 'Times New Roman', serif;
+    font-family: 'Times New Roman', serif;
     color: white;
     background-color: #4ACSFF;
     padding: 10px 15px;
@@ -57,12 +57,12 @@ nav ul li a:hover {
     transform: scale(1.05);
 }
 
-/* ===== Main Content & Sections ===== */
+/* ===== Main Content & Sections (Background Fixed) ===== */
 main {
     padding: 20px;
     max-width: 1000px;
     margin: 20px auto;
-    background-color: #f0ece1;
+    background-color: #e3decf; /* FIXED: Changed background to #e3decf */
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -107,7 +107,7 @@ ul li {
     margin-bottom: 8px;
 }
 
-/* ===== Table Styling ===== */
+/* ===== Table Styling (Header Color Fixed) ===== */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -122,7 +122,7 @@ th, td {
 
 th {
     background-color: #4ACSFF;
-    color: black;
+    color: black; /* FIXED: Ensures "Day" and "Hours" text is black */
 }
 
 
@@ -136,9 +136,8 @@ th {
 
 
 table tr:hover {
-    background-color: #B3FCFC;
+    background-color: #e3decf; /* FIXED: Changed hover background to #e3decf */
 }
-
 
 
 /* ===== Accessibility: Skip Link ===== */
